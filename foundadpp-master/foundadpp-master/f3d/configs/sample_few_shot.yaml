@@ -1,0 +1,25 @@
+source: /path/to/mvtec_3d
+target: /path/to/mvtec_3d_fewshot
+num_samples: 1
+
+# Candidate sub‑folders with clean (good) samples.
+train_subpaths: ["train/good"]
+
+# File extensions for the two modalities.
+rgb_exts: [".png"]
+xyz_ext: ".tiff"
+
+rename_images: false
+
+# Copy non‑sampled splits verbatim so the target folder is a complete dataset.
+copy_test_set: true
+copy_validation_set: true
+copy_metadata: true
+
+seed: 42
+
+user_config: ""
+
+hydra:
+  run:
+    dir: .

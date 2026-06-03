@@ -1,0 +1,2 @@
+[console_scripts]
+foundad = foundad.main:main
